@@ -3,7 +3,11 @@ export interface Account {
   lastName: string;
   membershipNumber: string;
   password: string;
-  status: 'Success' | 'MemberNotInTipi' | 'MemberHasMs365' | 'MemberAlreadyHasMoodle';
+  status:
+    | 'Success'
+    | 'MemberNotInTipi'
+    | 'MemberHasMs365'
+    | 'MemberAlreadyHasMoodle';
 }
 
 export interface Certificate {
