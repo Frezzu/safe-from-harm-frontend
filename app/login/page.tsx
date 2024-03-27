@@ -1,3 +1,7 @@
+'use client';
+
+import { signIn } from "next-auth/react";
+
 export default function Login() {
   return (
     <main className="container mx-auto flex flex-grow">
@@ -12,7 +16,7 @@ export default function Login() {
               </span>
               , musisz się najpierw zalogować.
             </p>
-            <button className="btn btn-primary">Zaloguj się</button>
+            <button onClick={() => signIn('azure-ad')} className="btn btn-primary">Zaloguj się</button>
           </div>
         </div>
       </div>

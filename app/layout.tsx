@@ -8,7 +8,7 @@ import clsx from 'clsx';
 
 const inter = Inter({ subsets: ['latin'] });
 const museo = localFont({
-  src: '../public/fonts/Museo300-Regular.woff2',
+  src: '../fonts/Museo300-Regular.woff2',
   display: 'swap',
 });
 
@@ -36,7 +36,7 @@ function Navbar() {
     <div className="navbar flex flex-col items-center gap-3 bg-primary text-center text-primary-content md:flex-row md:px-24">
       <Link href="/">
         <Image
-          src="/identifier-zhp-white.png"
+          src="/images/identifier-zhp-white.png"
           height={60}
           width={155}
           alt="Związek Harcerstwa Polskiego"
